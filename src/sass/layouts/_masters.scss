@@ -1,74 +1,19 @@
-.masters-section {
-  padding-left: 55px;
-  padding-right: 55px;
-}
-.masters-subtitle {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: $black-text-color;
-}
-
-.masters-title {
-  margin-top: 0px;
-  margin-bottom: 44px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 1.1;
-  letter-spacing: 0.05em;
-  color: $black-text-color;
-}
 .masters-list {
   display: flex;
 }
 
 .masters-item {
-  width: 370px;
-  height: 502px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.masters-img {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  width: 370px;
-  height: 346px;
-}
+
 .master-name {
   margin-top: 0px;
   margin-bottom: 8px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.3;
-  letter-spacing: 0.02em;
-  color: $black-text-color;
 }
 
 .master-specialist {
   margin-top: 0px;
   margin-bottom: 30px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.3;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-}
-
-.social-list {
-  display: flex;
-}
-.social-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
 }
