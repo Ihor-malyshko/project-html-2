@@ -2,7 +2,7 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
+@import './normalize.scss';
 // Стили для файла с примером HTML-фрагмента
 @import './example';
-@import"./andrey";
+@import './andrey';
