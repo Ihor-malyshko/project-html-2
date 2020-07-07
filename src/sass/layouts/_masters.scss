@@ -1,27 +1,19 @@
-.masters {
-  
-}
-
 .masters-list {
-
+  display: flex;
 }
 
 .masters-item {
-
-}
-
-.masters-img {
-
-}
-
-.masters-content {
-
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .master-name {
-
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .master-specialist {
-  
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
