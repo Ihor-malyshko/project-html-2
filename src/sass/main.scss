@@ -7,13 +7,42 @@
 
 @import './oleksandr';
 
-@import './example';
-@import"./utils/variables";
 
-@import './nastya.scss';
+@import"./layouts/base";
+@import"./layouts/header";
+@import"./layouts/hero";
+@import"./layouts/about-us";
+@import"./layouts/price";
+@import"./layouts/feature";
+@import"./layouts/masters";
+@import"./layouts/gallery";
+@import"./layouts/footer";
 
-@import"./andrey";
+@import"./components/logo";
+@import"./components/menu";
+@import"./components/menu-mob";
+@import"./components/buttons";
+@import"./components/contacts";
+@import"./components/aside";
+@import"./components/backdrop";
+@import"./components/title-text";
+@import"./components/overlay";
+@import"./components/table";
+@import"./components/work-shift";
+@import"./components/social";
+@import"./components/address";
+@import"./components/form-footer";
 
 
 
 
+
+@import'./example';
+@import'./utils/variables';
+
+
+@import'./nastya.scss';
+
+@import'./andrey';
+
+@import'./layouts/masters';

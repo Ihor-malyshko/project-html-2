@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <title>Заголовок страницы</title>
+  </head>
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/nastya.html"></include>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Заголовок страницы</title>
-</head>
+    <include src="./partials/example.html"></include>
 
-<body>
-  <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-  <include src="./partials/oleksandr.html"></include>
+    <include src="./partials/dima-test.html"></include>
 
-  <include src="./partials/nastya.html"></include>
+    <include src="./partials/andrey.html"></include>
+    <include src="./partials/Roman.html"></include>
 
-  <include src="./partials/example.html"></include>
 
-  <include src="./partials/dima-test.html"></include>
+    <include src="./partials/logo.html"></include>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/menu.html"></include>
+    <include src="./partials/aside.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/about-us.html"></include>
+    <include src="./partials/price.html"></include>
+    <include src="./partials/work-shift.html"></include>
+    <include src="./partials/feature.html"></include>
+    <include src="./partials/masters.html"></include>
+    <include src="./partials/table.html"></include>
+    <include src="./partials/social.html"></include>
+    <include src="./partials/social-aside.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/example.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/form-footer.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/backdrop.html"></include>
+    <include src="./partials/address.html"></include>
+    <include src="./partials/copyright.html"></include>
 
-  <include src="./partials/andrey.html"></include>
-  <include src="./partials/Roman.html"></include>
-
-  <include src="./partials/feature.html"></include>
-
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-  <script src="./index.js"></script>
-</body>
-
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
 </html>
