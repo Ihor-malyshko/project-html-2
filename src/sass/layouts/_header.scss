@@ -1,45 +1,40 @@
 .header {
-    background-color: grey;
-    
-
+  background-color: grey;
 }
 
 .header-container {
-    display: flex;
+  display: flex;
 }
 
 .logo {
-    display: inline-block;
-    width: 69px;
-    height: 56px;
-    background-color: red;
-    margin-right: 40px;
+  display: inline-block;
+  width: 69px;
+  height: 56px;
+  background-color: red;
+  margin-right: 40px;
 }
-
 
 .nav-list {
-    display: flex;
+  display: flex;
 }
 
-.nav-item{
-    padding-top: 13px;
-    padding-bottom: 13px;
+.nav-item {
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
-.nav-item:not(:last-child){
-margin-right: 40px;
+.nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 
-
-.contacts{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .nav-contact {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-right: 40px;
-
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-right: 40px;
 }
