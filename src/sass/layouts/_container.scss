@@ -1,0 +1,43 @@
+.container {
+  
+}
+
+.container-list{
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  
+}
+
+.container-img{
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 445px;
+  width: 270px;
+  
+
+}
+
+.container-item.text{
+  width: 500px;
+  padding-left: 34px;
+  
+}
+
+.container-desc{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: #555555;
+  
+}
+.container-text{
+  font-size: 14px;
+  line-height:1.85;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  scroll-padding-right: 20px;
+  text-align: justify;
+}
