@@ -1,15 +1,30 @@
 // Круглые иконки
-.social {
-}
-
 .social-list {
-}
-
-.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $white-text-color;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover .social-icon,
+  &:focus .social-icon {
+    fill: $accent-color;
+  }
 }
 
 .social-icon {
+  width: 20px;
+  height: 20px;
+  fill: $black-text-color;
 }
