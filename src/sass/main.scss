@@ -1,48 +1,35 @@
 /*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-@import './normalize.scss';
-@import './utils/variables';
+* Главный файл стилей.
+* Все паршалы подключаются сюда.
+*/
 // Стили для файла с примером HTML-фрагмента
+@import './utils/normalize.scss';
+@import './utils/variables';
+@import './layouts/base';
 
-@import './oleksandr';
+// для тестирования
+@import './test/example';
+@import './test/test1';
+@import './test/test2';
 
+// служебные
+@import './utils/visually-hidden';
+@import './utils/img';
+@import './utils/wrap';
+@import './utils/backdrop';
 
-@import"./layouts/base";
-@import"./layouts/header";
-@import"./layouts/hero";
-@import"./layouts/about-us";
-@import"./layouts/price";
-@import"./layouts/feature";
-@import"./layouts/masters";
-@import"./layouts/gallery";
-@import"./layouts/footer";
+// вспомогательное
+@import './layouts/section';
+@import './layouts/container';
 
-@import"./components/logo";
-@import"./components/menu";
-@import"./components/menu-mob";
-@import"./components/buttons";
-@import"./components/contacts";
-@import"./components/aside";
-@import"./components/backdrop";
-@import"./components/title-text";
-@import"./components/overlay";
-@import"./components/table";
-@import"./components/work-shift";
-@import"./components/social";
-@import"./components/address";
-@import"./components/form-footer";
+// Основа
+@import './layouts/header';
 
+@import './layouts/hero';
+@import './layouts/about-us';
+@import './layouts/price';
+@import './layouts/feature';
+@import './layouts/masters';
+@import './layouts/gallery';
 
-
-@import'./example';
-
-
-
-
-@import'./nastya.scss';
-
-@import'./andrey';
-
-@import'./layouts/masters';
+@import './layouts/footer';
