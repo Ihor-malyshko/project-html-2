@@ -1,8 +1,91 @@
 .about {
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.image-wrapper {
+  width: 50%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .about-gallery {
+  padding-right: 15px;
+
+  display: none;
+  height: 445px;
+
+  @media screen and (min-width: 768px) {
+    padding: 15px;
+
+    display: flex;
+    width: 330px;
+    height: 235px;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 270px;
+    height: 445px;
+    flex-direction: row;
+  }
+}
+
+.about-block {
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    padding-left: 30px;
+  }
+}
+
+.about-item.text {
+  padding-left: 34px;
+}
+
+.about-desc {
+  margin: 0;
+
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #555555;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+
+    font-size: 16px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
 
 .about-text {
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
 }
