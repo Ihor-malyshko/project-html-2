@@ -1,24 +1,30 @@
 .header {
-  background-color: grey;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }
 
 .header-container {
   display: flex;
+  padding-left: 46px;
 }
 
 .logo {
   display: inline-block;
   z-index: 2;
- 
+
   width: 69px;
   height: 56px;
-  background-color: red;
+  background-image: url(../../src/images/svg/logo.svg);
   margin-right: 40px;
 }
 
 .nav-list {
   display: flex;
-  background-color: $primary-bgc;
+  
 }
 
 .nav-item {
