@@ -19,6 +19,7 @@
 .feature-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .feature-item:nth-child(2) {
@@ -38,8 +39,7 @@
 .feature-position {
   width: 100%;
   height: 133px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   background-color: $section-bgc;
 }
 
@@ -54,13 +54,13 @@
 }
 
 .feature-words {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: Open Sans;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   color: $black-text-color;
-  margin-top: 0px;
-  margin-bottom: 0px;
   text-align: center;
 }
 
