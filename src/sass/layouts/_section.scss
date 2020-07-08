@@ -55,10 +55,19 @@
 }
 
 .section-discription--gray {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 80px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;;
   color: $header-price-text;
 }
 
-.section-description::before {
+.section-discription--gray::before {
   position: absolute;
   top: 7px;
   left: -80px;
