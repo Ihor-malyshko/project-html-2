@@ -5,6 +5,7 @@
 // Стили для файла с примером HTML-фрагмента
 @import './utils/normalize.scss';
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './layouts/base';
 
 // для тестирования
@@ -22,6 +23,7 @@
 @import './layouts/section';
 @import './layouts/container';
 @import './components/social';
+@import './components/cards';
 
 // Основа
 @import './layouts/header';
