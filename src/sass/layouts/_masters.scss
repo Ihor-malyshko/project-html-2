@@ -1,19 +1,38 @@
-.masters-list {
-  display: flex;
+.master-section {
+	background: $section-bgc;
 }
 
-.masters-item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+.masters-title {
+	margin-bottom: 44px;
 }
 
 .master-name {
-  margin-top: 0px;
-  margin-bottom: 8px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: center;
+	letter-spacing: 0.02em;
+
+	color: $black-text-color;
 }
 
 .master-specialist {
-  margin-top: 0px;
-  margin-bottom: 30px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+
+	font-size: 14px;
+	line-height: 1.3;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+.master-information {
+	// text-align: center;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+
+	color: $accent-color;
 }

@@ -5,6 +5,7 @@
 // Стили для файла с примером HTML-фрагмента
 @import './utils/normalize.scss';
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './layouts/base';
 
 // для тестирования
@@ -21,6 +22,8 @@
 // вспомогательное
 @import './layouts/section';
 @import './layouts/container';
+@import './components/social';
+@import './components/cards';
 
 // Основа
 @import './layouts/header';
@@ -42,7 +45,6 @@
 @import './components/aside';
 @import './components/text';
 @import './components/social';
-// @import './components/gallery';
 @import './components/form-footer';
 @import './components/address';
 @import './components/copyright';

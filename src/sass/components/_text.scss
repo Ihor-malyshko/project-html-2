@@ -17,3 +17,14 @@
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
+
+.text-price {
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
