@@ -23,8 +23,8 @@
   line-height: 2.14;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: 1200px) {
-  font-size: 18px;
-  line-height: 1.67;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67;
   }
 }
