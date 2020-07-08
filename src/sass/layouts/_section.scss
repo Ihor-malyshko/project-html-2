@@ -11,7 +11,7 @@
     padding-top: 130px;
     padding-bottom: 130px;
   }
-  outline: teal solid 1px;
+  // outline: teal solid 1px;
 }
 
 .section-title {
@@ -59,6 +59,14 @@
   color: $header-price-text;
 }
 
+.section-discription--white {
+  color: $white-text-color;
+}
+
 .section-discription--gray::before {
   background: $header-price-text;
+}
+
+.section-discription--white::before {
+  background: $white-text-color;
 }

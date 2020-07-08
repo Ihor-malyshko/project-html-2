@@ -1,5 +1,31 @@
-.address-list {
+.address {
+  font-style: normal;
+  // text-align: center;
+  // @media screen and (min-width: $desktop) {
+  //   text-align: start;
+  // }
+}
+.address-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.address-item {
+.address-item:last-child {
+  margin-bottom: 40px;
+}
+
+.address-link {
+  color: $secondary-grey-color;
+}
+
+.address-link--line {
+  text-decoration: underline;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: $accent-color;
+}
+
+.working-hours-text {
+  margin: 0;
 }
