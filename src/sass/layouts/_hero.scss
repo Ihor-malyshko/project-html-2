@@ -4,6 +4,7 @@
 }
 
 .container-hero {
+  z-index: 2;
 	position: relative;
 	display: flex;
 	min-height: 680px;
@@ -61,7 +62,6 @@
 
 	color: white;
 	
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
