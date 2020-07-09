@@ -33,20 +33,24 @@
 	background-image: url(../../src/images/logo--white.svg);
 
 	@media screen and (min-width: $tablet) {
-		background-image: url(../../src/images/svg/logo.svg);
+    background-image: url(../../src/images/svg/logo.svg);
+    margin-right: 30px;
 	}
 
 	@media screen and (min-width: $desktop) {
 		margin-right: 70px;
 	}
 }
-// -----------------------------------------Бургер
+
+
 
 .nav-button {
 	display: none;
 }
 
 .pseudo-socials {
+
+display: block;
 	@media screen and (min-width: 767px) {
 		display: none;
 	}
@@ -58,9 +62,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	.pseudo-socials {
-		display: none;
-	}
+
 
 	.nav-button.nav-button.is-open .menu-icon {
 		fill: black;
@@ -168,12 +170,19 @@
 	color: black;
 
 	@media screen and (max-width: 768px) {
-		align-items: flex-start;
+    align-items: flex-start;
+    margin-right: 40px;
 	}
 
 	@media screen and (min-width: $tablet) {
 		flex-direction: row;
-		color: #fff;
+    color: #fff;
+    margin-right: 60px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+		
+    margin-right: 225px;
 	}
 }
 
@@ -210,7 +219,16 @@
 }
 
 .contacts .button {
-	color: black;
+
+  color: black;
+
+ @media screen and (min-width: $tablet) {
+   color: white;
+ }
+ 
+  
+  
+
 }
 
 .nav-contact {
