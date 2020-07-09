@@ -72,6 +72,11 @@
 }
 
 .nav-contact {
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    margin-top: 20px;
+  }
+
 	@media screen and (min-width: $desktop) {
 		padding-top: 13px;
 		padding-bottom: 13px;
