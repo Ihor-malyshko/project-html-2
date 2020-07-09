@@ -1,36 +1,28 @@
 /* card set */
 
 .cards {
+	@media screen and (min-width: $mobile) {
+	}
 	@media screen and (min-width: $tablet) {
-		display: flex;
-		flex-wrap: wrap;
+		align-items: center;
 		justify-content: center;
 	}
-
-	margin: -$tab-size;
-
-	padding: 0;
-	list-style: none;
+	@media screen and (min-width: $desktop) {
+		display: flex;
+	}
 }
-
 .cards__item {
-	padding: $tab-size;
-	margin-left: auto;
-	margin-right: auto;
-
-	@media screen and (min-width: $tablet) {
-		width: calc(100% / 2);
-	}
-	@media screen and (min-width: $desktop) {
-		width: calc(100% / 4);
-	}
+	align-self: center;
 }
-
-.cards__item--second {
+.cards__item:not(:last-child) {
+	@media screen and (min-width: $mobile) {
+		margin-bottom: 64px;
+	}
 	@media screen and (min-width: $tablet) {
-		width: inherit;
+		margin-bottom: 64px;
 	}
 	@media screen and (min-width: $desktop) {
-		width: calc(100% / 4);
+		margin-right: 30px;
+		margin-bottom: 0px;
 	}
 }

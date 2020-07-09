@@ -1,15 +1,53 @@
 .master-section {
 	background: $section-bgc;
 }
+.container.master-container {
+	@media screen and (min-width: $mobile) {
+		width: 480px;
+		margin-top: 84px;
+	}
+	@media screen and (min-width: $tablet) {
+		width: 768px;
+		margin-top: 100px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 1200px;
+		margin-top: 130px;
+	}
+}
+.section-description-box {
+	margin-bottom: 20px;
+}
 
+.section-description.black-color {
+	color: $black-text-color;
+}
 .masters-title {
 	margin-bottom: 44px;
 }
-
+.masters-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.masters-img {
+	@media screen and (min-width: $mobile) {
+		width: 418px;
+		height: 346px;
+	}
+	@media screen and (min-width: $tablet) {
+		width: 450px;
+		height: 346px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 370px;
+		height: 346px;
+	}
+}
 .master-name {
 	margin-top: 0px;
 	margin-bottom: 8px;
-
+	font-weight: normal;
 	font-size: 18px;
 	line-height: 1.3;
 	text-align: center;
