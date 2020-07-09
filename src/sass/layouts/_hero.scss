@@ -31,7 +31,7 @@
 	bottom: 0;
 	left: 0;
 	width: 155px;
-	padding: 120px 15px;
+	padding: 120px 76px;
 
 	@media screen and (max-width: 767px) {
 		display: none;
@@ -47,11 +47,13 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+  justify-content: center;
+  width: 306px;
 
 	@media screen and (min-width: $tablet) and (max-width: $desktop) {
 		margin-left: 160px;
-		max-width: 355px;
+    
+    width: 355px;
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -82,7 +84,9 @@
 	font-size: 16px;
 	line-height: 1.62;
 	margin-bottom: 0px;
-	margin-top: 20px;
+  margin-top: 20px;
+
+  
 }
 
 .hero-social-list {
@@ -94,7 +98,7 @@
 }
 
 .hero-social-item {
-	padding: 0px 15px;
+	padding: 0px 20px;
 }
 
 .hero-social-link {
@@ -121,7 +125,7 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: 15px;
+	right: 45px;
 	text-align: right;
 
 	@media screen and( max-width: 767px) {
