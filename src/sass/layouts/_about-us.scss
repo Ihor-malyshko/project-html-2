@@ -14,12 +14,24 @@
 	width: 50%;
 
 	@media screen and (min-width: $tablet) {
-		display: flex;
-		flex-direction: column;
+		display: none;
+		// flex-direction: column;
 	}
 	@media screen and (min-width: $desktop) {
 		display: flex;
 		flex-direction: row;
+	}
+}
+
+.image-wrapper.tablet {
+	width: 50%;
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-direction: column;
+	}
+	@media screen and (min-width: $desktop) {
+		display: none;
+		// flex-direction: row;
 	}
 }
 
