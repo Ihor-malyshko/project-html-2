@@ -18,7 +18,7 @@
 
 .subtitle {
 	margin-top: 0;
-	margin-bottom: 20px;
+	color: $black-text-color;
 }
 
 .feature-list {
@@ -52,13 +52,21 @@
 .feature-position {
 	width: 100%;
 	height: 133px;
-	padding: 20px;
+	padding: 20px 25px;
 	background-color: $section-bgc;
+
+	@media screen and (min-width: $tablet) {
+		padding: 20px 35px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		padding: 20px 18px;
+	}
 }
 
 .feature-number {
+	position: relative;
 	display: block;
-	font-family: Open Sans;
 	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.35;
@@ -66,14 +74,22 @@
 	text-align: center;
 }
 
+.feature-number::after {
+	content: " ";
+	position: absolute;
+	top: 25%;
+	width: 13px;
+    height: 22px;
+	background-image: url(../images/svg/plus.svg);
+	background-repeat: no-repeat;
+}
+
 .feature-words {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-family: Open Sans;
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
-	color: $black-text-color;
 	text-align: center;
 }
 
@@ -86,7 +102,7 @@
 
 	@media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
 		max-width: 500px;
-		margin-right: 228px;
+		margin-right: auto;
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -98,7 +114,7 @@
 .feature-block-second {
 	@media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
 		max-width: 450px;
-		margin-left: 279px;
+		margin-left: auto;
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -106,9 +122,3 @@
 		margin-top: -9px;
 	}
 }
-
-// @media screen and (min-width: $tablet) {
-// }
-
-// @media screen and (min-width: $desktop) {
-// }
