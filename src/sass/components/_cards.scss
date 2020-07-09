@@ -12,7 +12,10 @@
 	}
 }
 .cards__item {
-	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 370px;
+	height: 502px;
 }
 .cards__item:not(:last-child) {
 	@media screen and (min-width: $mobile) {
