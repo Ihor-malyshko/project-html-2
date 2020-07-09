@@ -13,17 +13,28 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $white-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .button--white {
+  background-color: $white-text-color;
+  color: $black-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-text-color;
+  }
 }
 
-.button-slider {
-}
+.button-slider {}
 
-.button-close {
-}
+.button-close {}
 
 .price-button-box {
   text-align: center;
