@@ -23,6 +23,12 @@
 
 
 .hero-aside {
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    
+  }
+
 	@media screen and (min-width: $tablet) and (max-width: $desktop) {
 		width: 90px;
 	}
@@ -127,6 +133,10 @@ color: #9DA4BD;
 }
 
 .dots {
+ @media screen and( max-width: 767px) {
+    display: none;
+  }
+
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -170,6 +180,10 @@ color: #9DA4BD;
 }
 
 .slider-button-list {
+
+  @media screen and( max-width: 767px) {
+    display: none;
+  }
 	display: flex;
 	align-items: flex-end;
 
