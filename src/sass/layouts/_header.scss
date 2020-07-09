@@ -65,7 +65,8 @@
 
 	@media screen and (min-width: $desktop) {
 		display: flex;
-		flex-direction: row;
+    flex-direction: row;
+    flex-flow: row-reverse;
 		align-items: center;
 		margin-left: auto;
 	}
