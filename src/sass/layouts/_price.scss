@@ -4,12 +4,36 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url(../images/price/price-tel@2x.png);
+  }
+
   @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
     background-image: url(../images/price/bg-png-tablet.png), linear-gradient(to right, $primary-bgc, $primary-bgc);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/price/price-tablet@2x.png);
+    }
   }
 
   @media screen and (min-width: $desktop) {
     background-image: url(../images/price/bg-png-desctop.png), linear-gradient(to right, $primary-bgc, $primary-bgc);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/price/price-img@2x.png);
+    }
   }
 }
 
@@ -45,7 +69,7 @@
 
   @media screen and (min-width: $desktop) {
     padding: 30px 40px;
-    height: 240px;
+    height: 242px;
     column-count: 2;
     column-gap: 80px;
 
