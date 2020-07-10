@@ -89,7 +89,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: 50%;
     margin-left: 65px;
   }
 }
@@ -97,13 +96,11 @@
 .section-description.about {
   color: #303030;
   margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .section-title.about {
   font-size: 28px;
   line-height: 1.17;
-  letter-spacing: 0.05em;
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
@@ -123,7 +120,6 @@
 
 .about-desc {
   font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.02em;
   color: #555555;
   margin-top: 0;
@@ -135,8 +131,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: 90%;
-
     font-size: 18px;
     line-height: 1.66;
   }
@@ -148,6 +142,7 @@
   letter-spacing: 0.02em;
   margin-bottom: 40px;
   margin-top: 0;
+  color: #555555;
 }
 
 .button.about {

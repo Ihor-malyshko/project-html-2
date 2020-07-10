@@ -42,7 +42,7 @@
 }
 
 .section-description::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 7px;
   left: -80px;
@@ -51,8 +51,8 @@
   margin-right: 20px;
   width: 60px;
   height: 1px;
-
-  background: $black-text-color;
+  color: rgba(157, 164, 189, 0.6);
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .section-discription--gray {
@@ -63,3 +63,5 @@
   background: $header-price-text;
 }
 
+.section-discription--white::before {
+  background: $footer-modal-text;
