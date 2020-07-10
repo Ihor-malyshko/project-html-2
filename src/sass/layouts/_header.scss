@@ -27,14 +27,13 @@
 
 	width: 80px;
 	height: 56px;
-  background-image: url(../../src/images/logo--white.svg);
-  background-repeat: no-repeat;
+	background-image: url(../../src/images/logo--white.svg);
+	background-repeat: no-repeat;
 
 	@media screen and (min-width: $tablet) {
 		background-image: url(../../src/images/svg/logo.svg);
-	  margin-right: 60px;
-    }
-	
+		margin-right: 60px;
+	}
 
 	@media screen and (min-width: $desktop) {
 		margin-right: 70px;
@@ -42,42 +41,40 @@
 }
 
 .nav {
-@media screen and (max-width:767px) {
-  font-size: 18px;
-  line-height: 25px;
-  text-align: left;
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+		line-height: 25px;
+		text-align: left;
+	}
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+
+	color: #ffffff;
+
+	@media screen and (min-width: $tablet) {
+		padding-bottom: 34px;
+	}
 }
 
-  font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.1em;
+.nav-contact {
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+		line-height: 25px;
+	}
 
-color: #FFFFFF;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
 
-@media screen and (min-width: $tablet) {
-  padding-bottom: 34px;
-  
-}
-}
-
-.nav-contact{
-
-@media screen and (max-width:767px) {
-  font-size: 18px;
-  line-height: 25px;
-}
-
-  font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
+	color: #ffffff;
 }
 
 .nav-button {
@@ -93,10 +90,9 @@ color: #FFFFFF;
 
 .menu {
 	display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 }
 
 .nav-link:hover,
@@ -246,16 +242,16 @@ color: #FFFFFF;
 
 .contacts {
 	display: flex;
-  flex-direction: column;
-  align-items: center;
+	flex-direction: column;
+	align-items: center;
 
 	@media screen and (min-width: $desktop) {
 		display: flex;
 		flex-direction: row;
 		flex-flow: row-reverse;
 		align-items: center;
-    margin-left: auto;
-    padding-bottom: 30px; 
+		margin-left: auto;
+		padding-bottom: 30px;
 	}
 }
 
