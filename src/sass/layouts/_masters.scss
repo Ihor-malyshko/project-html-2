@@ -4,6 +4,12 @@
 
 .section-description-box {
   margin-bottom: 20px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $desktop) {
+    max-width: 100%;
+  }
 }
 
 .section-description.black-color {
@@ -14,6 +20,7 @@
 }
 .masters-wrap {
   height: 346px;
+  width: 100%;
 }
 
 .master-name {
