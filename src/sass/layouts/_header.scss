@@ -1,280 +1,280 @@
 .header {
-	background-color: transparent;
-	position: absolute;
-	top: 30px;
-	left: 0;
-	right: 0;
-	z-index: 5;
+  background-color: transparent;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }
 
 .header-container {
-	display: flex;
+  display: flex;
 
-	// @media screen and (min-width: $tablet) {
-	// 	padding-left: 15px;
-	// 	padding-right: 15px;
-	// }
-
-	@media screen and (min-width: $desktop) {
-		padding-left: 46px;
-		padding-right: 46px;
-	}
+  @media screen and (min-width: $desktop) {
+    padding-left: 46px;
+    padding-right: 46px;
+  }
 }
 
 .logo {
-	display: inline-block;
-	z-index: 10;
+  display: inline-block;
+  z-index: 10;
 
-	width: 80px;
-	height: 56px;
-	background-image: url(../../src/images/logo--white.svg);
-	background-repeat: no-repeat;
+  width: 80px;
+  height: 56px;
+  background-image: url(../../src/images/logo--white.svg);
+  background-repeat: no-repeat;
 
-	@media screen and (min-width: $tablet) {
-		background-image: url(../../src/images/svg/logo.svg);
-		margin-right: 60px;
-	}
+  @media screen and (min-width: $tablet) {
+    background-image: url(../../src/images/svg/logo.svg);
+    margin-right: 60px;
+  }
 
-	@media screen and (min-width: $desktop) {
-		margin-right: 70px;
-	}
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .nav {
-	@media screen and (max-width: 767px) {
-		font-size: 18px;
-		line-height: 25px;
-		text-align: left;
-	}
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
 
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-	letter-spacing: 0.1em;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+  }
 
-	color: #ffffff;
-
-	@media screen and (min-width: $tablet) {
-		padding-bottom: 34px;
-	}
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 34px;
+  }
 }
 
 .nav-contact {
-	@media screen and (max-width: 767px) {
-		font-size: 18px;
-		line-height: 25px;
-	}
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
 
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-	letter-spacing: 0.1em;
+  color: #ffffff;
 
-	color: #ffffff;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .nav-button {
-	display: none;
-	outline: none;
+  display: none;
+  outline: none;
 }
 
 .pseudo-socials {
-	display: block;
-	@media screen and (min-width: 767px) {
-		display: none;
-	}
+  display: block;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.pseudo-socials-link {
+  &:hover {
+    color: #ff6c00;
+  }
 }
 
 .menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-	color: #ff6c00;
+  color: #ff6c00;
 }
 
 .nav-contact:hover,
 .nav-contact:focus {
-	color: #ff6c00;
+  color: #ff6c00;
 }
 
 @media screen and (max-width: 767px) {
-	.nav-button.nav-button.is-open .menu-icon {
-		fill: black;
-	}
+  .nav-button.nav-button.is-open .menu-icon {
+    fill: black;
+  }
 
-	.nav-button {
-		display: inline-flex;
-		margin-left: auto;
-		z-index: 5;
+  .nav-button {
+    display: inline-flex;
+    margin-left: auto;
+    z-index: 5;
 
-		padding: 0px;
-		border: none;
-		background-color: transparent;
-	}
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+  }
 
-	.nav-button .menu-icon-close {
-		display: none;
-	}
+  .nav-button .menu-icon-close {
+    display: none;
+  }
 
-	.nav-button.is-open .menu-icon-close {
-		display: block;
-	}
+  .nav-button.is-open .menu-icon-close {
+    display: block;
+  }
 
-	.nav-button.is-open .menu-icon-open {
-		display: none;
-		color: #000000;
-	}
+  .nav-button.is-open .menu-icon-open {
+    display: none;
+    color: #000000;
+  }
 
-	.menu {
-		display: none;
-		position: absolute;
-		z-index: 4;
-		top: -30px;
-		right: 0;
-		width: 70%;
+  .menu {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: -30px;
+    right: 0;
+    width: 70%;
 
-		height: 680px;
+    height: 680px;
 
-		background-color: #ffffff;
+    background-color: #ffffff;
 
-		padding-top: 60px;
-		padding-bottom: 60px;
-		padding-left: 50px;
-		padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
 
-		text-align: center;
-		font-size: 20px;
-		border-top: 1px solid #ececec;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
-	}
+    text-align: center;
+    font-size: 20px;
+    border-top: 1px solid #ececec;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
 
-	.menu.is-open {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-	}
+  .menu.is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
-	.menu-icon {
-		fill: white;
-	}
+  .menu-icon {
+    fill: white;
+  }
 
-	.menu.is-open .nav {
-		margin-top: 20px;
-	}
+  .menu.is-open .nav {
+    margin-top: 20px;
+  }
 
-	.menu.is-open .contacts {
-		margin-top: 64px;
-	}
+  .menu.is-open .contacts {
+    margin-top: 64px;
+  }
 
-	.menu.is-open .nav-contact {
-		margin-top: 20px;
-	}
+  .menu.is-open .nav-contact {
+    margin-top: 20px;
+  }
 
-	.menu.is-open .pseudo-socials {
-		margin-top: 64px;
-		text-align: left;
-	}
+  .menu.is-open .pseudo-socials {
+    margin-top: 64px;
+    text-align: left;
+  }
 
-	.menu.is-open .pseudo-socials-item:not(:last-of-type) {
-		margin-bottom: 24px;
-	}
+  .menu.is-open .pseudo-socials-item:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
 
-	.menu.is-open .pseudo-socials-list {
-		padding-left: 100px;
-		position: relative;
-	}
+  .menu.is-open .pseudo-socials-list {
+    padding-left: 100px;
+    position: relative;
+  }
 
-	.menu.is-open .pseudo-socials-list::before {
-		content: "";
-		position: absolute;
-		width: 60px;
-		height: 1px;
-		background-color: #303030;
-		left: 0;
-		top: 16px;
-	}
+  .menu.is-open .pseudo-socials-list::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+    left: 0;
+    top: 16px;
+  }
 }
 
 .nav-list {
-	display: flex;
-	flex-direction: column;
-	color: black;
+  display: flex;
+  flex-direction: column;
+  color: black;
 
-	@media screen and (max-width: 76px) {
-		align-items: flex-start;
-		margin-right: 40px;
-	}
+  @media screen and (max-width: 76px) {
+    align-items: flex-start;
+    // margin-right: 40px;
+  }
 
-	@media screen and (min-width: $tablet) {
-		flex-direction: row;
-		color: #fff;
-		margin-right: 60px;
-	}
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    color: #fff;
+    // margin-right: 60px;
+  }
 
-	@media screen and (min-width: $desktop) {
-		margin-right: 225px;
-	}
+  // @media screen and (min-width: $desktop) {
+  // 	margin-right: 225px;
+  // }
 }
 
 .nav-item {
-	padding-top: 13px;
-	padding-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .nav-item:not(:last-child) {
-	@media screen and (min-width: $tablet) {
-		margin-right: 24px;
-	}
+  @media screen and (min-width: $tablet) {
+    margin-right: 24px;
+  }
 
-	@media screen and (min-width: $desktop) {
-		margin-right: 40px;
-	}
+  @media screen and (min-width: $desktop) {
+    margin-right: 40px;
+  }
 }
 
 .contacts {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	@media screen and (min-width: $desktop) {
-		display: flex;
-		flex-direction: row;
-		flex-flow: row-reverse;
-		align-items: center;
-		margin-left: auto;
-		padding-bottom: 30px;
-	}
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    align-items: center;
+    margin-left: auto;
+    padding-bottom: 30px;
+  }
 }
 
 .contacts .button {
-	color: black;
+  color: black;
 
-	@media screen and (min-width: $tablet) {
-		color: white;
-	}
+  @media screen and (min-width: $tablet) {
+    color: white;
+  }
 }
 
 .nav-contact {
-	color: black;
-	@media screen and (min-width: $tablet) and (max-width: 1279px) {
-		margin-top: 20px;
-		color: #fff;
-	}
+  color: black;
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    margin-top: 20px;
+    color: #fff;
+  }
 
-	@media screen and (min-width: $desktop) {
-		padding-top: 13px;
-		padding-bottom: 13px;
-		margin-right: 40px;
-		color: #fff;
-	}
+  @media screen and (min-width: $desktop) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 40px;
+    color: #fff;
+  }
 }
