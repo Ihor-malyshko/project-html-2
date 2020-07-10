@@ -478,36 +478,53 @@ body {
 }
 
 /* card set */
-@media screen and (min-width: 768px) {
-  .cards {
-    align-items: center;
-    justify-content: center;
-  }
+.cards {
+  /* outline: teal solid 3px; */
+  margin: -15px;
+  padding: 0;
+  list-style: none;
 }
 @media screen and (min-width: 1280px) {
   .cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
-.cards__item {
-  align-self: center;
+@media screen and (min-width: 768px) {
+  .cards--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-@media screen and (min-width: 480px) {
-  .cards__item:not(:last-child) {
-    margin-bottom: 64px;
-  }
+.cards-item {
+  /* position: relative; */
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
-  .cards__item:not(:last-child) {
-    margin-bottom: 64px;
+  .cards-item {
+    width: calc(100% / 2);
   }
 }
 @media screen and (min-width: 1280px) {
-  .cards__item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0px;
+  .cards-item {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards-item--second {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cards-item--second {
+    width: calc(100% / 4);
   }
 }
 
@@ -1013,6 +1030,7 @@ body {
   .image-wrapper.tablet {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1022,17 +1040,18 @@ body {
 }
 
 .about-gallery {
-  padding-right: 15px;
   display: none;
   height: 445px;
 }
 @media screen and (min-width: 768px) {
   .about-gallery {
-    padding: 15px;
     display: flex;
     width: 330px;
     height: 235px;
     flex-direction: column;
+  }
+  .about-gallery:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1042,8 +1061,28 @@ body {
     height: 445px;
     flex-direction: row;
   }
+  .about-gallery:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .about-img {
+    width: 330px;
+    height: 235px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-img {
+    width: 270px;
+    height: 445px;
+  }
+}
+
+.about-block {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 @media screen and (min-width: 480px) {
   .about-block {
     width: 100%;
@@ -1052,19 +1091,29 @@ body {
 @media screen and (min-width: 768px) {
   .about-block {
     width: 50%;
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-block {
     width: 50%;
-    padding-left: 30px;
+    margin-left: 65px;
   }
 }
 
 .section-description.about {
   color: #303030;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
+.section-title.about {
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
 @media screen and (min-width: 768px) {
   .section-title.about {
     font-size: 28px;
@@ -1083,9 +1132,12 @@ body {
 }
 
 .about-desc {
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .about-desc {
@@ -1105,13 +1157,8 @@ body {
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
-  padding-bottom: 20px;
-  margin-bottom: 0;
-}
-@media screen and (min-width: 1280px) {
-  .about-text {
-    width: 90%;
-  }
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .button.about {
@@ -1124,14 +1171,29 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .price {
+    background-image: url(/price-tel@2x.e1caae76.png);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) {
   .price {
     background-image: url(/bg-png-tablet.f572008b.png), linear-gradient(to right, #111319, #111319);
   }
 }
+@media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url(/price-tablet@2x.e56cef1c.png);
+  }
+}
 @media screen and (min-width: 1280px) {
   .price {
     background-image: url(/bg-png-desctop.eaddb22f.png), linear-gradient(to right, #111319, #111319);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url(/price-img@2x.c4bff7f3.png);
   }
 }
 
@@ -1167,7 +1229,7 @@ body {
 @media screen and (min-width: 1280px) {
   .price-list {
     padding: 30px 40px;
-    height: 240px;
+    height: 242px;
     column-count: 2;
     column-gap: 80px;
     background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
@@ -1326,25 +1388,6 @@ body {
   background: #f7f7f7;
 }
 
-@media screen and (min-width: 480px) {
-  .container.master-container {
-    width: 480px;
-    margin-top: 84px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container.master-container {
-    width: 768px;
-    margin-top: 100px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container.master-container {
-    width: 1200px;
-    margin-top: 130px;
-  }
-}
-
 .section-description-box {
   margin-bottom: 20px;
 }
@@ -1358,28 +1401,7 @@ body {
 }
 
 .masters-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (min-width: 480px) {
-  .masters-img {
-    width: 418px;
-    height: 346px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .masters-img {
-    width: 450px;
-    height: 346px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .masters-img {
-    width: 370px;
-    height: 346px;
-  }
+  height: 346px;
 }
 
 .master-name {
