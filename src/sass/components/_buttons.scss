@@ -14,11 +14,13 @@
   text-transform: uppercase;
 
   color: $white-text-color;
+  outline: none;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
   }
+
 }
 
 .button--white {
