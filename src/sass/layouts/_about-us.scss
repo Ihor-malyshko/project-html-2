@@ -31,7 +31,6 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -45,7 +44,6 @@
   height: 445px;
 
   @media screen and (min-width: $tablet) {
-
     display: flex;
     width: 330px;
     height: 235px;
@@ -81,24 +79,18 @@
 }
 
 .about-block {
-  margin-left: 10px;
-  margin-right: 10px;
-
   @media screen and (min-width: $mobile) {
     width: 100%;
-
   }
 
   @media screen and (min-width: $tablet) {
     width: 50%;
-    margin-right: 30px;
     margin-left: 30px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 50%;
     margin-left: 65px;
-
   }
 }
 
@@ -137,7 +129,6 @@
   margin-top: 0;
   margin-bottom: 20px;
 
-
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: 1.62;
@@ -157,7 +148,6 @@
   letter-spacing: 0.02em;
   margin-bottom: 40px;
   margin-top: 0;
-
 }
 
 .button.about {
