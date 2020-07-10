@@ -1,63 +1,48 @@
 .master-section {
-	background: $section-bgc;
+  background: $section-bgc;
 }
 
 .section-description-box {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .section-description.black-color {
-	color: $black-text-color;
+  color: $black-text-color;
 }
 .masters-title {
-	margin-bottom: 44px;
+  margin-bottom: 44px;
 }
 .masters-wrap {
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
+  height: 346px;
 }
-.masters-img {
-	@media screen and (min-width: $mobile) {
-		width: 418px;
-		height: 346px;
-	}
-	@media screen and (min-width: $tablet) {
-		width: 450px;
-		height: 346px;
-	}
-	@media screen and (min-width: $desktop) {
-		width: 370px;
-		height: 346px;
-	}
-}
-.master-name {
-	margin-top: 0px;
-	margin-bottom: 8px;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 1.3;
-	text-align: center;
-	letter-spacing: 0.02em;
 
-	color: $black-text-color;
+.master-name {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: $black-text-color;
 }
 
 .master-specialist {
-	margin-top: 0px;
-	margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 
-	font-size: 14px;
-	line-height: 1.3;
-	text-align: center;
-	letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .master-information {
-	// text-align: center;
-	padding-left: 30px;
-	padding-top: 30px;
-	padding-right: 30px;
-	padding-bottom: 30px;
+  // text-align: center;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 
-	color: $accent-color;
+  color: $accent-color;
 }
