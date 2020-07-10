@@ -49,6 +49,9 @@
     height: 235px;
     flex-direction: column;
 
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -66,7 +69,7 @@
   }
 }
 
-.about-img {
+.img.about {
   @media screen and (min-width: $tablet) {
     width: 330px;
     height: 235px;
