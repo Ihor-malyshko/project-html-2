@@ -90,13 +90,12 @@
     margin-top: 20px;
     color: #fff;
   }
-	@media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 13px;
     padding-bottom: 13px;
     margin-right: 40px;
     color: #fff;
   }
-
 }
 
 .contacts {
@@ -116,16 +115,16 @@
 
 .contacts .button {
   color: black;
-
+  transition: $timing-function;
   &:hover {
     color: white;
+    transition: $timing-function;
   }
 
   @media screen and (min-width: $tablet) {
     color: white;
   }
 }
- 
 
 .nav-button {
   display: none;
@@ -145,9 +144,10 @@
   font-size: 14px;
   line-height: 1.35;
   color: #303030;
-
+  transition: $timing-function;
   &:hover {
     color: #ff6c00;
+    transition: $timing-function;
   }
 }
 
@@ -160,11 +160,13 @@
 
 .nav-link:hover,
 .nav-link:focus {
+  transition: $timing-function;
   color: #ff6c00;
 }
 
 .nav-contact:hover,
 .nav-contact:focus {
+  transition: $timing-function;
   color: #ff6c00;
 }
 

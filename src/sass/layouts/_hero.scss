@@ -12,28 +12,28 @@
   padding-top: 60px;
 
   background-color: $primary-bgc;
-  background-image: url(../../src/images/header/header-tel@1x.jpg) , linear-gradient(to right, $primary-bgc, $primary-bgc);
+  background-image: url(../../src/images/header/header-tel@1x.jpg),
+    linear-gradient(to right, $primary-bgc, $primary-bgc);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 0;
 
-   @media screen and (min-device-pixel-ratio: 2),
-  	screen and (-webkit-min-device-pixel-ratio: 2),
-  	screen and (-o-min-device-pixel-ratio: 2/1),
-  	screen and (min-resolution: 192dpi),
-	screen and (min-resolution: 2dppx) {
-	  
-    background-image: url(../images/header/header-tel@2x.jpg);
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
-    background-image: url(../images/header/header-tablet-2@1x.jpg), linear-gradient(to right, $primary-bgc, $primary-bgc);
-    @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-		
+    background-image: url(../images/header/header-tel@2x.jpg);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+    background-image: url(../images/header/header-tablet-2@1x.jpg),
+      linear-gradient(to right, $primary-bgc, $primary-bgc);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url(../images/header/header-tablet-2@2x.jpg);
     }
   }
@@ -41,17 +41,14 @@
   @media screen and (min-width: $desktop) {
     background-image: url(../images/header/header@1x.jpg), linear-gradient(to right, $primary-bgc, $primary-bgc);
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url(../images/header/header@2x.jpg);
     }
   }
 }
-
- 
-
 
 .hero-aside {
   position: absolute;
@@ -144,9 +141,11 @@
 .hero-social-link {
   display: block;
   transform: scaleX(-1);
+  transition: $timing-function;
 
   &:hover {
-    color: #ff6c00;
+	color: #ff6c00;
+	transition: $timing-function;
   }
 }
 
@@ -213,6 +212,7 @@
   line-height: 1.36;
   text-align: right;
   letter-spacing: 0.1em;
+  cursor: pointer;
   color: #ffffff;
 
   background-color: transparent;
