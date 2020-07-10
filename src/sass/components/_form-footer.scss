@@ -55,8 +55,8 @@
 
   color: $footer-modal-text;
 
-  transition: top 250ms $timing-function, left 250ms $timing-function,
-    transform 250ms $timing-function, color 250ms $timing-function;
+  transition: top 250ms $timing-function, left 250ms $timing-function, transform 250ms $timing-function,
+    color 250ms $timing-function;
 }
 
 .form-input:focus + .form-label,
@@ -111,4 +111,7 @@
 .form-button {
   display: block;
   margin: 0 auto;
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
 }
