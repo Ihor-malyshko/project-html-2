@@ -50,6 +50,9 @@
     flex-direction: column;
   }
 
+  }
+
+
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     &:not(:last-child) {
       margin-bottom: 30px;
