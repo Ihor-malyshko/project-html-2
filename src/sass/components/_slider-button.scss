@@ -1,66 +1,68 @@
 .slider-btn {
-  padding: 0px;
-  margin: 0px;
-  border: none;
+  padding-left: 0px;
+  padding-right: 0px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	margin: 0px;
+	border: none;
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-align: right;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  color: #ffffff;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-align: right;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	color: #ffffff;
 
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .slider-button-list {
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+	display: flex;
+	align-items: flex-end;
+	margin-left: auto;
 
-  @media screen and( max-width: 767px) {
-    display: none;
-  }
+	@media screen and( max-width: 767px) {
+		display: none;
+	}
 }
 
 .slider-button-item {
-  position: relative;
+	position: relative;
 
-  display: flex;
-  padding-bottom: 30px;
-  width: 60px;
+	display: flex;
+	width: 60px;
 
-  &:nth-child(2n) {
-    justify-content: flex-end;
-  }
+	&:nth-child(2n) {
+		justify-content: flex-end;
+	}
 
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
 }
 
 .slider-button-item .slider-btn--left {
-  text-align: left;
-  color: rgba(157, 164, 189, 0.6);
+	text-align: left;
+	color: rgba(157, 164, 189, 0.6);
 }
 
 .slider-btn--right {
-  text-align: right;
+	text-align: right;
 }
 
 .slider-btn::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
 
-  display: inline-block;
-  width: 60px;
-  height: 1px;
-  background-color: #fff;
+	display: inline-block;
+	width: 60px;
+	height: 1px;
+	background-color: #fff;
 }
 
 .slider-btn.slider-btn--left::after {
-  background: rgba(157, 164, 189, 0.6);
+	background: rgba(157, 164, 189, 0.6);
 }
