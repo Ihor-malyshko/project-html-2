@@ -1,17 +1,22 @@
-.aside-header {
-}
+.hero-aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
 
-.aside-footer {
-}
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 120px 76px;
+  width: 155px;
 
-.aside.mob {
-}
+  background-color: #ffffff;
 
-.aside-list {
-}
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-.aside-item {
-}
-
-.aside-item::before {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 90px;
+  }
 }

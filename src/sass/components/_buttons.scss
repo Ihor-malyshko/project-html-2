@@ -15,10 +15,12 @@
 
   color: $white-text-color;
   outline: none;
+  transition: $timing-function;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
+    transition: $timing-function;
   }
 
 }
@@ -26,11 +28,13 @@
 .button--white {
   background-color: $white-text-color;
   color: $black-text-color;
+  transition: $timing-function;
 
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: $white-text-color;
+    transition: $timing-function;
   }
 }
 

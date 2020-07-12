@@ -38,7 +38,7 @@
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: $black-text-color;
 }
 
 .section-description::before {
@@ -52,15 +52,11 @@
   width: 60px;
   height: 1px;
   color: rgba(157, 164, 189, 0.6);
-  background-color: rgba(157, 164, 189, 0.6);;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .section-discription--gray {
   color: $header-price-text;
-}
-
-.section-discription--white {
-  color: $white-text-color;
 }
 
 .section-discription--gray::before {
@@ -68,5 +64,5 @@
 }
 
 .section-discription--white::before {
-  background: $white-text-color;
+  background: $footer-modal-text;
 }
