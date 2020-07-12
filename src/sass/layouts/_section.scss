@@ -59,6 +59,10 @@
   color: $header-price-text;
 }
 
+.section-discription--white {
+  color: $white-text-color;
+}
+
 .section-discription--gray::before {
   background: $header-price-text;
 }

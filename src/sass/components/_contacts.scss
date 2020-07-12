@@ -45,3 +45,10 @@
     }
   }
 }
+
+.contact-position {
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
