@@ -3,50 +3,12 @@
 * Все паршалы подключаются сюда.
 */
 // Стили для файла с примером HTML-фрагмента
-@import './utils/normalize.scss';
-@import './utils/variables';
-@import './utils/breakpoints';
-@import './layouts/base';
 
-// для тестирования
-@import './test/example';
-@import './test/test1';
-@import './test/test2';
-
-// служебные
-@import './utils/visually-hidden';
-@import './utils/img';
-@import './utils/wrap';
-@import './utils/backdrop';
-
-// вспомогательное
-@import './layouts/section';
-@import './layouts/container';
-@import './components/social';
-@import './components/cards';
-
-// Основа
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/about-us';
-@import './layouts/price';
-@import './layouts/feature';
-@import './layouts/masters';
-@import './layouts/gallery';
-@import './layouts/footer';
-
-// components
-@import './components/logo';
-@import './components/menu';
-@import './components/overlay';
-@import './components/menu-mob';
-@import './components/dots';
-@import './components/slider-button';
-@import './components/contacts';
-@import './components/buttons';
-@import './components/aside';
-@import './components/text';
-@import './components/social';
-@import './components/form-footer';
-@import './components/address';
-@import './components/copyright';
+@import "./base";
+@import "./img";
+@import "./wrap";
+@import "./cards";
+@import "./s1.scss";
+@import "./s2.scss";
+@import "./s3.scss";
+@import "./s4.scss";
