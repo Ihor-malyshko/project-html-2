@@ -1,0 +1,35 @@
+.social-text-list {
+  position: relative;
+  display: flex;
+  margin-right: -20px;
+  margin-left: 80px;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.social-text-item {
+  margin: 0px 20px;
+}
+
+.social-text-link {
+  display: block;
+  color: inherit;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+
+.social-text-list:before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: -80px;
+  width: 60px;
+  height: 1px;
+  background: #303030;
+}
