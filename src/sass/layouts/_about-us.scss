@@ -48,8 +48,10 @@
     width: 330px;
     height: 235px;
     flex-direction: column;
+  }
 
   }
+
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     &:not(:last-child) {
@@ -65,6 +67,7 @@
 
     &:not(:first-child) {
       margin-left: 30px;
+      margin-bottom: 0;
     }
   }
 }
