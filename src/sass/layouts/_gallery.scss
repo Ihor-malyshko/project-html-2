@@ -16,6 +16,7 @@
 .img-wrapper {
   overflow: hidden;
   width: 418px;
+  height: 360px;
 
 
   @media screen and (min-width: $tablet) {
@@ -27,4 +28,8 @@
     width: 270px;
     height: 360px;
   }
+}
+
+.gallery-description {
+  margin-bottom: 44px;
 }
