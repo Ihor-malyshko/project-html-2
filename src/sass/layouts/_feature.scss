@@ -31,8 +31,12 @@
 	margin-top: 35px;
 }
 
-.feature-item:nth-child(3) {
+.feature-item:nth-child(2n + 1) {
 	margin-top: -35px;
+}
+
+.feature-item:first-child {
+	margin-top: 0px;
 }
 
 .feature-item {
