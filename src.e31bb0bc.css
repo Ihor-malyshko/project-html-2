@@ -885,7 +885,7 @@ body.modal-open {
 .hero-social-list:first-of-type::before {
   content: "";
   position: absolute;
-  top: -135%;
+  top: -143%;
   left: 50px;
   display: inline-block;
   width: 1px;
@@ -918,7 +918,6 @@ body.modal-open {
 
 .about-gallery {
   display: none;
-  height: 445px;
 }
 @media screen and (min-width: 768px) {
   .about-gallery {
@@ -946,14 +945,8 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .about-block {
-    width: 100%;
-  }
-}
 @media screen and (min-width: 768px) {
   .about-block {
-    width: 50%;
     margin-left: 30px;
   }
 }
@@ -1012,10 +1005,6 @@ body.modal-open {
   margin-bottom: 40px;
   margin-top: 0;
   color: #555555;
-}
-
-.button.about {
-  color: #303030;
 }
 
 .price {
@@ -1732,6 +1721,12 @@ body.modal-open {
   line-height: 2.14;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 400px) {
+  .text-price {
+    font-size: 10px;
+    line-height: 1.67;
+  }
+}
 @media screen and (min-width: 768px) {
   .text-price {
     font-size: 18px;
@@ -1856,6 +1851,7 @@ body.modal-open {
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   background-color: transparent;
+  outline: none;
   font-family: inherit;
   color: #ffffff;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
