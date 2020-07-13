@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 120px 76px;
+
   width: 155px;
 
   background-color: #ffffff;
@@ -18,5 +18,11 @@
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: 90px;
+    padding: 120px 76px 123px 67px;
+    
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 120px 37px 123px 67px;
   }
 }

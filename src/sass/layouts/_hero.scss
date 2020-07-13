@@ -1,5 +1,6 @@
 .hero {
   min-height: 680px;
+  
 }
 
 .container-hero {
@@ -60,7 +61,7 @@
   color: white;
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    margin-left: 160px;
+    margin-left: 220px;
     width: 355px;
   }
 

@@ -1,7 +1,7 @@
 .header {
   background-color: transparent;
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 0;
   right: 0;
   z-index: 5;
@@ -34,7 +34,7 @@
   flex-direction: column;
   color: black;
 
-  @media screen and (max-width: 76px) {
+  @media screen and (max-width: 767px) {
     align-items: flex-start;
   }
 
@@ -45,11 +45,13 @@
 }
 
 .nav-link {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .nav-item:not(:last-child) {
+  
   @media screen and (min-width: $tablet) {
     margin-right: 24px;
   }
@@ -69,9 +71,12 @@
 
   color: black;
 
+  margin-top: 0px;
+
   @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 1.33;
+    
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -89,7 +94,12 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column;
+  }
 
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -104,9 +114,16 @@
 .contacts .button {
   color: black;
   transition: $timing-function;
+  
   &:hover {
     color: white;
     transition: $timing-function;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 24px;
+    padding: 12px 37px;
+    min-width: 160px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -117,6 +134,7 @@
 .nav-button {
   display: none;
   outline: none;
+  height: 40px;
 }
 
 .pseudo-socials {
