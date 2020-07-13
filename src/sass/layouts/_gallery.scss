@@ -15,19 +15,19 @@
 
 .img-wrapper {
   overflow: hidden;
-  width: 418px;
-  height: 360px;
+  // width: 418px;
+  // height: 360px;
 
 
-  @media screen and (min-width: $tablet) {
-    width: 329px;
-    height: 360px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   width: 329px;
+  //   height: 360px;
+  // }
 
-  @media screen and (min-width: $desktop) {
-    width: 270px;
-    height: 360px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   width: 270px;
+  //   height: 360px;
+  // }
 }
 
 .gallery-description {

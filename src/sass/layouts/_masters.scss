@@ -2,16 +2,16 @@
   background: $section-bgc;
 }
 
-.section-description-box {
-  margin-bottom: 20px;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+// .section-description-box {
+//   margin-bottom: 20px;
+//   max-width: 450px;
+//   margin-left: auto;
+//   margin-right: auto;
 
-  @media screen and (min-width: $desktop) {
-    max-width: 100%;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     max-width: 100%;
+//   }
+// }
 
 .section-description.black-color {
   color: $black-text-color;
@@ -58,14 +58,14 @@
   color: $accent-color;
 }
 
-.masters-img {
-  width: 418px;
+// .masters-img {
+//   width: 418px;
 
-  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
-    width: 450px;
-  }
+//   @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+//     width: 450px;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    width: 370px;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     width: 370px;
+//   }
+// }
