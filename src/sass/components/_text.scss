@@ -23,6 +23,11 @@
   line-height: 2.14;
   letter-spacing: 0.02em;
 
+  @media screen and (max-width: 400px) {
+    font-size: 10px;
+    line-height: 1.67;
+  }
+
   @media screen and (min-width: $tablet) {
     font-size: 18px;
     line-height: 1.67;
