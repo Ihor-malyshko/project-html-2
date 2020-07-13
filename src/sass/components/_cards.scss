@@ -47,7 +47,7 @@
   }
 }
 
-.cards-item-450px {
+.cards-item- {
   @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
     width: 480px;
   }
