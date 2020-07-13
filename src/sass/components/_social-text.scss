@@ -24,7 +24,7 @@
 
   &:hover,
   &:focus {
-    color: #ff6c00;
+    color: $accent-color;
   }
 }
 
@@ -36,5 +36,5 @@
   left: -80px;
   width: 60px;
   height: 1px;
-  background: #303030;
+  background: $black-text-color;
 }
