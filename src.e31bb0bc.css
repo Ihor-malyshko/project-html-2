@@ -279,6 +279,7 @@ body {
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: #303030;
+  outline: none;
 }
 
 .example {
@@ -374,7 +375,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.06521;
+  line-height: 1.16521;
   letter-spacing: 0.05em;
   color: #303030;
 }
@@ -404,8 +405,7 @@ body {
   margin-right: 20px;
   width: 60px;
   height: 1px;
-  color: rgba(157, 164, 189, 0.6);
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: #303030;
 }
 
 .section-discription--gray {
@@ -536,7 +536,7 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) {
-  .cards-item-450px {
+  .cards-item- {
     width: 480px;
   }
 }
@@ -544,7 +544,7 @@ body {
 .header {
   background-color: transparent;
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 0;
   right: 0;
   z-index: 5;
@@ -579,7 +579,7 @@ body {
   flex-direction: column;
   color: black;
 }
-@media screen and (max-width: 76px) {
+@media screen and (max-width: 767px) {
   .nav-list {
     align-items: flex-start;
   }
@@ -592,8 +592,9 @@ body {
 }
 
 .nav-link {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -615,6 +616,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.1em;
   color: black;
+  margin-top: 0px;
 }
 @media screen and (max-width: 767px) {
   .nav-contact {
@@ -640,7 +642,13 @@ body {
 .contacts {
   display: flex;
   flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 1280px) {
   .contacts {
@@ -661,6 +669,13 @@ body {
   color: white;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .contacts .button {
+    margin-top: 24px;
+    padding: 12px 37px;
+    min-width: 160px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts .button {
     color: white;
@@ -670,6 +685,7 @@ body {
 .nav-button {
   display: none;
   outline: none;
+  height: 40px;
 }
 
 .pseudo-socials {
@@ -757,7 +773,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .hero-main-content {
-    margin-left: 160px;
+    margin-left: 220px;
     width: 355px;
   }
 }
@@ -1058,6 +1074,7 @@ body {
 
 .price-title {
   margin-bottom: 44px;
+  line-height: 1.1666;
 }
 
 .price-list {
@@ -1100,7 +1117,6 @@ body {
 @media screen and (min-width: 1280px) {
   .feature-container {
     flex-direction: row-reverse;
-    justify-content: space-around;
   }
 }
 
@@ -1125,8 +1141,12 @@ body {
   margin-top: 35px;
 }
 
-.feature-item:nth-child(3) {
+.feature-item:nth-child(2n+1) {
   margin-top: -35px;
+}
+
+.feature-item:first-child {
+  margin-top: 0px;
 }
 
 .feature-item {
@@ -1197,7 +1217,7 @@ body {
 }
 
 .feature-block-first {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 @media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) {
   .feature-block-first {
@@ -1209,6 +1229,7 @@ body {
   .feature-block-first {
     max-width: 500px;
     margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1222,6 +1243,7 @@ body {
   .feature-block-second {
     max-width: 370px;
     margin-top: -9px;
+    margin-right: 130px;
   }
 }
 
@@ -1282,6 +1304,20 @@ body {
   color: #ff6c00;
 }
 
+.masters-img {
+  width: 418px;
+}
+@media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) {
+  .masters-img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .masters-img {
+    width: 370px;
+  }
+}
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
@@ -1297,6 +1333,7 @@ body {
 .img-wrapper {
   overflow: hidden;
   width: 418px;
+  height: 360px;
 }
 @media screen and (min-width: 768px) {
   .img-wrapper {
@@ -1309,6 +1346,10 @@ body {
     width: 270px;
     height: 360px;
   }
+}
+
+.gallery-description {
+  margin-bottom: 44px;
 }
 
 .footer {
@@ -1358,6 +1399,11 @@ body {
   align-items: center;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-top: 7px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .nav-button.is-open .menu-icon {
@@ -1367,6 +1413,8 @@ body {
   .nav-button {
     display: inline-flex;
     margin-left: auto;
+    margin-top: 8px;
+    margin-top: 8px;
     z-index: 5;
     padding: 0px;
     border: none;
@@ -1390,15 +1438,15 @@ body {
     display: none;
     position: absolute;
     z-index: 4;
-    top: -30px;
+    top: -40px;
     right: 0;
     width: 70%;
     height: 680px;
     background-color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 20px;
     border-top: 1px solid #ececec;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
@@ -1421,10 +1469,6 @@ body {
 
   .menu.is-open .contacts {
     margin-top: 64px;
-  }
-
-  .menu.is-open .nav-contact {
-    margin-top: 20px;
   }
 
   .menu.is-open .pseudo-socials {
@@ -1454,7 +1498,7 @@ body {
 .dots {
   position: absolute;
   top: 50%;
-  right: 45px;
+  right: 40px;
   transform: translateY(-50%);
   text-align: right;
 }
@@ -1489,8 +1533,8 @@ body {
 .slider-btn {
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   margin: 0px;
   border: none;
   font-weight: 600;
@@ -1504,6 +1548,9 @@ body {
 }
 
 .slider-button-list {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
   display: flex;
   align-items: flex-end;
   margin-left: auto;
@@ -1523,7 +1570,7 @@ body {
   justify-content: flex-end;
 }
 .slider-button-item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 26px;
 }
 
 .slider-button-item .slider-btn--left {
@@ -1592,16 +1639,21 @@ body {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contact-container {
+    padding: 0 100px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) {
   .contact-position {
     display: flex;
-    justify-content: space-between;
   }
 }
 
 .button {
   cursor: pointer;
-  width: 160px;
+  min-width: 160px;
   height: 40px;
   border: none;
   padding: 12px 20px;
@@ -1644,7 +1696,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 120px 76px;
   width: 155px;
   background-color: #ffffff;
 }
@@ -1656,6 +1707,12 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .hero-aside {
     width: 90px;
+    padding: 120px 76px 123px 67px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-aside {
+    padding: 120px 37px 123px 67px;
   }
 }
 
@@ -1835,6 +1892,12 @@ body {
 
 .address {
   font-style: normal;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 .address-icon {
@@ -1846,10 +1909,6 @@ body {
 
 .address-item:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.address-item:last-child {
-  margin-bottom: 40px;
 }
 
 .address-link {
@@ -1867,6 +1926,13 @@ body {
 .address-link:focus {
   color: #ff6c00;
   stroke: #ff6c00;
+}
+
+@media screen and (min-width: 768px) and (max-width: calc(1280px - 1px)) {
+  .working-hours {
+    margin-right: 90px;
+    margin-left: auto;
+  }
 }
 
 .working-hours-text {
@@ -1917,7 +1983,7 @@ body {
   position: relative;
   display: flex;
   margin-right: -20px;
-  margin-left: 80px;
+  margin-left: auto;
 }
 @media screen and (max-width: 768px) {
   .social-text-list {
@@ -1931,7 +1997,10 @@ body {
 
 .social-text-link {
   display: block;
-  color: inherit;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-text-link:hover, .social-text-link:focus {
@@ -1941,7 +2010,7 @@ body {
 .social-text-list:before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 7px;
   left: -80px;
   width: 60px;
   height: 1px;
