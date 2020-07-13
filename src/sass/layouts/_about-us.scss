@@ -22,7 +22,6 @@
 
 .about-gallery {
   display: none;
-  height: 445px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -56,12 +55,8 @@
 
 
 .about-block {
-  @media screen and (min-width: $mobile) {
-    width: 100%;
-  }
 
   @media screen and (min-width: $tablet) {
-    width: 50%;
     margin-left: 30px;
   }
 
@@ -93,7 +88,7 @@
 .about-desc {
   font-size: 16px;
   letter-spacing: 0.02em;
-  color: #555555;
+  color: $main-text-color;
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -114,9 +109,5 @@
   letter-spacing: 0.02em;
   margin-bottom: 40px;
   margin-top: 0;
-  color: #555555;
-}
-
-.button.about {
-  color: #303030;
+  color: $main-text-color;
 }
