@@ -80,7 +80,7 @@
   font-size: 45px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: $white-text-color;
 
   @media screen and (min-width: $mobile) {
     font-size: 48px;
@@ -97,7 +97,7 @@
   margin-top: 0px;
   width: 320px;
 
-  color: #9da4bd;
+  color: $secondary-grey-color;
   font-size: 12px;
   line-height: 1.62;
 
@@ -114,7 +114,7 @@
 }
 
 .hero .section-description {
-  color: rgba(157, 164, 189, 0.6);
+  color: $header-price-text;
 }
 
 .hero-social-list {
@@ -131,7 +131,7 @@
 
   &:hover,
   &:focus {
-    color: #ff6c00;
+    color: $accent-color;
   }
 }
 
@@ -146,10 +146,10 @@
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: #303030;
+  color: $black-text-color;
 
   &:hover {
-    color: #ff6c00;
+    color: $accent-color;
     transition: $timing-function;
   }
 }
@@ -165,7 +165,7 @@
   width: 1px;
   height: 60px;
 
-  background: #303030;
+  background: $black-text-color;
 
   transform: rotate(90deg) translateX(50%) translateY(-50%);
 }

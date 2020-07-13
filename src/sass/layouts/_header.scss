@@ -16,7 +16,7 @@
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: $white-text-color;
 
   @media screen and (max-width: 767px) {
     font-size: 18px;
@@ -59,7 +59,7 @@
   text-align: center;
   letter-spacing: 0.1em;
 
-  color: #303030;
+  color: $black-text-color;
 
   @media screen and (min-width: $mobile) {
     font-size: 18px;
@@ -91,7 +91,7 @@
   line-height: 1.33;
   letter-spacing: 0.1em;
 
-  color: #303030;
+  color: $black-text-color;
 
   margin-top: 0px;
 
@@ -179,12 +179,12 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.35;
-  color: #303030;
+  color: $black-text-color;
   transition: $timing-function;
   
   &:hover,
   &:focus {
-    color: #ff6c00;
+    color: $accent-color;
     transition: $timing-function;
   }
 }
@@ -194,11 +194,11 @@
 .nav-link:hover,
 .nav-link:focus {
   transition: $timing-function;
-  color: #ff6c00;
+  color: $accent-color;
 }
 
 .nav-contact:hover,
 .nav-contact:focus {
   transition: $timing-function;
-  color: #ff6c00;
+  color: $accent-color;
 }

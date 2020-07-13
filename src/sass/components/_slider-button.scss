@@ -12,7 +12,7 @@
   text-align: right;
   letter-spacing: 0.1em;
   cursor: pointer;
-  color: #ffffff;
+  color: $white-text-color;
 
   background-color: transparent;
 }
@@ -48,7 +48,7 @@
 
 .slider-button-item .slider-btn--left {
   text-align: left;
-  color: rgba(157, 164, 189, 0.6);
+  color: $header-price-text;
 }
 
 .slider-btn--right {
@@ -68,5 +68,5 @@
 }
 
 .slider-btn.slider-btn--left::after {
-  background: rgba(157, 164, 189, 0.6);
+  background: $header-price-text;
 }

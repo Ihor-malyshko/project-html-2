@@ -61,7 +61,7 @@
 
     height: 725px;
 
-    background-color: #ffffff;
+    background-color: $white-text-color;
 
     padding-top: 100px;
     padding-bottom: 60px;
@@ -107,11 +107,11 @@
 
     letter-spacing: 0.2em;
 
-    color: #303030;
+    color: $black-text-color;
 
     &:hover,
     &:focus {
-      color: #ff6c00;
+      color: $accent-color;
       transition: $timing-function;
     }
   }
@@ -133,7 +133,7 @@
     position: absolute;
     width: 60px;
     height: 1px;
-    background-color: #303030;
+    background-color: $black-text-color;
     left: 0;
     top: 20px;
   }
