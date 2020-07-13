@@ -1,31 +1,12 @@
 .about {
-  list-style: none;
 
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 .image-wrapper {
-  width: 50%;
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-    // flex-direction: column;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.image-wrapper.tablet {
   width: 50%;
 
   @media screen and (min-width: $tablet) {
@@ -34,8 +15,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-    display: none;
-    // flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -45,9 +26,11 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    flex-direction: column;
+
     width: 330px;
     height: 235px;
-    flex-direction: column;
+
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -58,9 +41,11 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
+    flex-direction: row;
+
     width: 270px;
     height: 445px;
-    flex-direction: row;
+
 
     &:not(:last-child) {
       margin-right: 30px;
@@ -69,17 +54,6 @@
   }
 }
 
-.img.about {
-  @media screen and (min-width: $tablet) {
-    width: 330px;
-    height: 235px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 270px;
-    height: 445px;
-  }
-}
 
 .about-block {
   @media screen and (min-width: $mobile) {
@@ -94,11 +68,6 @@
   @media screen and (min-width: $desktop) {
     margin-left: 65px;
   }
-}
-
-.section-description.about {
-  color: #303030;
-  margin-top: 0;
 }
 
 .section-title.about {
