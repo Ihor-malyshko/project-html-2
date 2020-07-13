@@ -67,6 +67,14 @@
   color: $white-text-color;
 }
 
+.form-input:valid {
+  outline-color: green;
+}
+
+.form-input:invalid {
+  outline-color: red;
+}
+
 .form-textarea + .form-label {
   top: 16px;
   left: 0;
