@@ -4,9 +4,11 @@
   align-items: center;
   width: 100%;
 
-  @media screen and (min-width: $tablet) {
-    padding-top: 7px;
+  @media screen and (min-width: $tablet) and (max-width:1279px) {
+    padding-top: 8px;
+    align-items: baseline;
   }
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -25,6 +27,15 @@
     padding: 0px;
     border: none;
     background-color: transparent;
+  }
+
+  .nav-button.is-open {
+    position: fixed;
+    right: 30px;
+  }
+
+  .menu.is-open {
+    position: fixed;
   }
 
   .nav-button .menu-icon-close {
@@ -48,11 +59,11 @@
     right: -1px;
     width: 70%;
 
-    height: 680px;
+    height: 725px;
 
     background-color: #ffffff;
 
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
     padding-left: 40px;
     padding-right: 40px;

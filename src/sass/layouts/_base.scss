@@ -8,3 +8,7 @@ body {
   color: $black-text-color;
   outline: none;
 }
+
+body.modal-open {
+    overflow: hidden;
+}
