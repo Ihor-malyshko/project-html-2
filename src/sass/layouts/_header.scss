@@ -1,7 +1,7 @@
 .header {
   background-color: transparent;
   position: absolute;
-  top: 40px;
+  top: 32px;
   left: 0;
   right: 0;
   z-index: 5;
@@ -25,7 +25,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-bottom: 34px;
+    padding-bottom: 0px;
   }
 }
 
@@ -131,7 +131,7 @@
     flex-flow: row-reverse;
     align-items: center;
     margin-left: auto;
-    padding-bottom: 30px;
+    
   }
 }
 
