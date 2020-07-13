@@ -4,6 +4,10 @@
   // @media screen and (min-width: $desktop) {
   //   text-align: start;
   // }
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+    margin-bottom: 0;
+  }
 }
 
 .address-icon {
@@ -15,10 +19,6 @@
 
 .address-item:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.address-item:last-child {
-  margin-bottom: 40px;
 }
 
 .address-link {
@@ -36,6 +36,13 @@
 .address-link:focus {
   color: $accent-color;
   stroke: $accent-color;
+}
+
+.working-hours {
+  @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+    margin-right: 90px;
+    margin-left: auto;
+  }
 }
 
 .working-hours-text {

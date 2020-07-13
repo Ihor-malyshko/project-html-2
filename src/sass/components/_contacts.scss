@@ -46,9 +46,14 @@
   }
 }
 
+.contact-container {
+  @media screen and (min-width: $desktop) {
+    padding: 0 100px;
+  }
+}
+
 .contact-position {
   @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
     display: flex;
-    justify-content: space-between;
   }
 }
