@@ -1894,12 +1894,8 @@ body.modal-open {
 .form-field input {
   width: 100%;
   margin: 0;
-  padding: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 42px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .checkbox-container {
@@ -1983,6 +1979,7 @@ body.modal-open {
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   font-family: inherit;
+  font-size: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
